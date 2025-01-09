@@ -13,7 +13,25 @@ $connection = mysqli_connect($server, $userName, $password, $db_name);
  }
  $sql = "INSERT INTO users (name, email, password, age, address, city, phone, website) VALUES ('Abdullah', abdullah@gmail.com, 123456789, 20, 'Dhaka', 'Dhaka', 1234566, 'www.abdullah.com )"
 
+ if (mysqli_query($connection, $sql)){
+  echo "Data inserted";
+ }else {
+  echo "Error creating table: " . mysqli_error($conn);
+}
  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?>
